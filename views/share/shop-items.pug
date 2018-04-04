@@ -1,0 +1,33 @@
+section.mbr-gallery.cid-qz35KMEe8F#shop4-9d(data-rv-view="3351")
+    .mbr-shop(card-buttons="")
+        //Shop Gallery
+        .row.col-md-12
+            .wrapper-shop-items.col-md-12
+                .mbr-gallery-row
+                    .shop-items
+                        each item,index in products
+                            .mbr-gallery-item(data-tags="Awesome" data-slide-to="0" data-seller="false" data-price="41" data-oldprice="82")
+                                .item_overlay(data-toggle="modal")
+                                .galleryItem(data-toggle="modal")
+                                    .style_overlay
+                                    .img_wraper
+                                        img(alt="No preview image" src=item.image)
+                                    span.onsale.mbr-fonts-style.display-7(data-onsale="true")= item.discount + '%'
+                                    .sidebar_wraper
+                                        h4.item-title.mbr-fonts-style.mbr-text.display-5= item.name
+                                        .price-block
+                                            span.shop-item-price.mbr-fonts-style.display-5= '$' + (item.price - item.price*item.discount/100)
+                                            span.oldprice.mbr-fonts-style.display-7(style={display:"none"})= '$' + item.price
+                                        .card-description= item.description
+                                        .mbr-section-btn(buttons="0" style={display: "none"})
+                                            a.btn.btn-secondary.display-7(href="#")
+                                                | Buy now!
+                    .cleafix
+        //Lightbox
+        .shopItemsModal_wraper(style={"z-index": 100})
+            .shopItemsModalBg
+            .shopItemsModal.row
+                .col-md-6.image-modal
+                .col-md-6.text-modal
+                .closeModal
+                    .close-modal-wrapper

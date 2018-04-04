@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= title
+    block styles
+      link(rel="stylesheet", href="assets/web/assets/mobirise-icons/mobirise-icons.css")
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700")
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+      link(rel="stylesheet", href="assets/socicon/css/styles.css")
+      link(rel="stylesheet", href="assets/dropdown/css/style.css")
+      link(rel="stylesheet", href="assets/theme/css/style.css")
+      link(rel="stylesheet", href="assets/mobirise-gallery/style.css")
+      link(rel="stylesheet", href="assets/mobirise/css/mbr-additional.css")
+
+  body
+    include share/header
+    block body
+    include share/map
+    include share/footer
+    block scripts
+      script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+      script(src="assets/smooth-scroll/smooth-scroll.js")
+      script(src="assets/touch-swipe/jquery.touch-swipe.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js")
+      script(src="assets/countdown/jquery.countdown.min.js")
+      script(src="assets/mobirise-shop/script.js")
+      script(src="assets/dropdown/js/script.min.js")
+      script(src="assets/theme/js/script.js")
+      script(src="assets/mobirise-gallery/player.min.js")
+      script(src="assets/mobirise-gallery/script.js")
